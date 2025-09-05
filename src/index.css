@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border: hsl(var(--border));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --animation-delay:var(--animation-delay-3);
+
+} 
+
+@layer base {
+  :root {
+    --primary:39 100% 50%;
+    --primary-foreground:0 0% 100%;
+    --background:0 0% 98%;
+    --foreground:240 0% 20%;
+    --card:0 0% 100%;
+    --card-foreground:240 10% 15%;
+    --border:240 5% 85%;
+    --animation-delay-3: 0.4s ease-in-out forwards;
+    scroll-behavior: smooth;
+    
+  }
+  .shadow-inner-lg{
+    box-shadow: inset 0 6px 12px rgba(0,0,0,0.25);
+  }
+  .dark {
+    
+    --primary:39 100% 50%;
+    --primary-foreground:230 10% 10%;
+    --background:230 10% 5%;
+    --foreground:0 0% 90%;
+    --card:240 10% 10%;
+    --card-foreground:0 0% 95%;
+    --border:240 5% 30%;
+  }
+}
+
+@utility container{
+    margin-inline:auto;
+    padding-inline:0;
+
+    @media (width >= 640px) {
+        max-width: 640px;
+    }
+    @media (width >= 1024px) {
+        max-width: 1024px;
+    }
+    @media (width >= 1280px) {
+        max-width: 1280px;
+    }
+    @media (width >= 1400px) {
+        max-width: 1400px;
+    }
+    @media (width >= 768px) {
+        max-width: 768px;
+    }
+
+    * padding {
+      @apply border-border;
+    }
+
+    body{
+      @apply bg-background text-foreground;
+    }
+
+    html ,body {
+      @apply scroll-smooth;
+    }
+
+    
+  
+
+}
+@utility button {
+  @apply bg-orange-300/10 text-foreground font-light px-8 py-2 rounded-es-full rounded-tr-full shadow-lg sm:px-14 text-sm cursor-pointer hover:shadow-xl transition-all duration-200 border-1 border-orange-500
+}
+
+#root{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
