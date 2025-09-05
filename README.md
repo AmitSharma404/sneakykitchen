@@ -1,12 +1,53 @@
-# React + Vite
+# 🍴 Food Website  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive food website built with **React** and **Tailwind CSS**.  
+This project showcases a food-themed UI with smooth styling, reusable components, and a mobile-first design.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features  
 
-## Expanding the ESLint configuration
+- 🍔 Responsive design (works on all screen sizes)  
+- 🍕 Clean UI built with Tailwind CSS utility classes  
+- 🍜 Reusable React components for scalability  
+- 🍩 Easy to customize and extend  
+- 🥗 Fast development with Vite (if you used it)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack  
+
+- **React** – Frontend framework  
+- **Tailwind CSS** – Styling  
+- **Vite / Create React App** – Development environment   
+
+---
+
+## 📂 Project Setup  
+
+Clone the repository and install dependencies:  
+
+```bash
+git clone https://github.com/AmitSharma404/sneakykitchen.git
+cd food-website
+pnpm install
+
+pnpm run dev   # if using Vite
+# or
+pnpm start     # if using CRA
+
+food-website/
+│── src/
+│   ├── assets/        # Images, icons
+│   ├── components/    # Reusable React components
+│   ├── pages/         # Main pages (Home, About, Menu, Contact)
+│   ├── App.jsx        # Root component
+│   ├── index.css      # Tailwind imports
+│   └── main.jsx       # Entry point
+│
+├── public/            # Static files
+├── package.json
+├── tailwind.config.js
+└── README.md
+
+
